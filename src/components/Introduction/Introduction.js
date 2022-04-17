@@ -37,10 +37,9 @@ const Introduction = () => {
       </Grid>
       <Grid item xs={12} md={6}>
         <Fade right cascade>
-          <div>
+          <div style={Styles.animationContainer}>
             <LottieAnimation
-              width={400}
-              height={400}
+            width={300}
               animationData={codeTime}
             />
           </div>
@@ -65,6 +64,9 @@ const Styles = {
     color: "#0e76a8",
     "&:hover": { color: "#e4aa48" },
   },
+  animationContainer:{
+    maxWidth:"100%"
+  }
 };
 
 export default Introduction;
