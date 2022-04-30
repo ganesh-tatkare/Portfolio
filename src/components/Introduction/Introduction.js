@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from '@mui/icons-material/Mail';
 
 const Introduction = () => {
   return (
@@ -32,6 +33,12 @@ const Introduction = () => {
                 <LinkedInIcon fontSize="large" sx={Styles.linkedInIcon} />
               </IconButton>
             </Grid>
+            <Grid item>
+              <IconButton>
+                <MailIcon fontSize="large" sx={Styles.mailIcon} />
+              </IconButton>
+            </Grid>
+            
           </Grid>
         </Fade>
       </Grid>
@@ -62,6 +69,10 @@ const Styles = {
   },
   linkedInIcon: {
     color: "#0e76a8",
+    "&:hover": { color: "#e4aa48" },
+  },
+  mailIcon: {
+    color: "#EA4335",
     "&:hover": { color: "#e4aa48" },
   },
   animationContainer:{
